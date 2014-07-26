@@ -34,4 +34,4 @@ df_molten <- melt(df,id=c("label","subject"))
 
 ## create tidy data set and write to the disk
 tidy <- dcast(df_molten, label + subject ~ variable, mean)
-write.csv(tidy, file = "tidy.csv",row.names = FALSE)
+write.csv(tidy, file = "tidy.txt",row.names = FALSE)
